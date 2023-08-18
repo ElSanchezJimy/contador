@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 
 function App() {
   const [count, setCount] = useState(0);
-
+  //funciones para incremento y decremento
   const incrementCount = () => {
     setCount(count + 1);
   };
@@ -13,6 +13,8 @@ function App() {
   };
 
   return (
+
+    //impresion en html
     <div className="App">
       <h1>Contador Simple</h1>
       <p>Valor del contador:</p> 
