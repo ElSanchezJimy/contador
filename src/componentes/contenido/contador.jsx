@@ -1,23 +1,24 @@
 import React, { useState } from 'react';
 
-function Contador() {
-  const [contador, setContador] = useState(0); //para mantener el estado del contador.
 
-  const incrementar = () => {
-    setContador(contador + 1);
+function App() {
+  const [count, setCount] = useState(0);
+
+  const incrementCount = () => {
+    setCount(count + 1);
   };
 
-  const decrementar = () => {
-    setContador(contador - 1);
+  const decrementCount = () => {
+    setCount(count - 1);
   };
 
-  // imprimir en fracion html
   return (
     <div className="App">
       <h1>Contador Simple</h1>
-      <p>Valor del contador: {Contador}</p>
-      <button onClick={incrementar}>Incrementar</button>
-      <button onClick={decrementar}>Decrementar</button>
+      <p>Valor del contador:</p> 
+      <h1>{count}</h1>
+      <button onClick={incrementCount}>Incrementar</button>
+      <button onClick={decrementCount}>Decrementar</button>
     </div>
   );
 }
